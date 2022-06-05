@@ -29,25 +29,32 @@ namespace DesafioSistemasInfo.Controllers
         public async Task<ActionResult> LoginAsync(string apelido, string senha)
         {
             
-            if (apelido == null)
+            if (apelido == null || senha == null)
             {
-                return View("Login");
+
+                return View("Error");
             }
-            //var usuario =  _context.Usuario.First(a => a.apelido == apelido);
             
             Usuario usuario =  _context.Usuario
                 .First(m => m.apelido == apelido);
             if (usuario == null)
             {
-                return View("Login");
+                return View("Error");
             } else
             {
                 if (usuario.senha == senha)
                 {
+                    HttpContext.Session.SetInt32("Userid", usuario.id);
+
                     return RedirectToAction("Index", "Usuarios");
+                   
                 }
-                return (View("Login"));
+                return (View("Error"));
             }
+        }
+        public ActionResult Error()
+        {
+            return View();
         }
 
     }

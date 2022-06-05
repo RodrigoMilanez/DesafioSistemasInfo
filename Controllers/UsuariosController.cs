@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DesafioSistemasInfo.Data;
 using DesafioSistemasInfo.Models;
+using Newtonsoft.Json;
 
 namespace DesafioSistemasInfo.Controllers
 {
@@ -34,19 +35,25 @@ namespace DesafioSistemasInfo.Controllers
             {
                 return NotFound();
             }
+            var userInfo = HttpContext.Session.GetInt32("Userid");
+            if (userInfo == id)
+            {
 
             var usuario = await _context.Usuario
                 .FirstOrDefaultAsync(m => m.id == id);
-            if (usuario == null)
-            {
-                return NotFound();
-            }
+                if (usuario == null)
+                {
+                    return NotFound();
+                }
 
-            return View(usuario);
+                return View(usuario);
+
+            }
+            return (View("Erro"));
+
         }
 
-        // GET: Usuarios/Create
-        public IActionResult Create()
+        public ActionResult Error()
         {
             return View();
         }
@@ -80,7 +87,19 @@ namespace DesafioSistemasInfo.Controllers
             {
                 return NotFound();
             }
-            return View(usuario);
+            var userInfo = HttpContext.Session.GetInt32("Userid");
+            if (userInfo == id)
+            {
+                return View(usuario);
+            } else
+            {
+                return (View("Erro"));
+            }
+        }
+
+        public async Task<IActionResult> Erro()
+        {
+            return View();
         }
 
         // POST: Usuarios/Edit/5

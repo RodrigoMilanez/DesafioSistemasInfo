@@ -2,16 +2,16 @@
 using Microsoft.Extensions.DependencyInjection;
 using DesafioSistemasInfo.Data;
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<ValidaContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ValidaContext") ?? throw new InvalidOperationException("Connection string 'ValidaContext' not found.")));
+
 builder.Services.AddDbContext<UsuarioContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("UsuarioContext") ?? throw new InvalidOperationException("Connection string 'UsuarioContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession();
 
 var app = builder.Build();
-
+app.UseSession();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
