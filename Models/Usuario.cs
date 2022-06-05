@@ -1,7 +1,11 @@
 ﻿namespace DesafioSistemasInfo.Models
 {
+    
     public class Usuario
     {
+        public Usuario()
+        {
+        }
         public int id { get; set; }
         public string nome { get; set; }
         

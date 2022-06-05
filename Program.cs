@@ -2,6 +2,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using DesafioSistemasInfo.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ValidaContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ValidaContext") ?? throw new InvalidOperationException("Connection string 'ValidaContext' not found.")));
 builder.Services.AddDbContext<UsuarioContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("UsuarioContext") ?? throw new InvalidOperationException("Connection string 'UsuarioContext' not found.")));
 
@@ -27,6 +29,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Login}/{id?}");
 
 app.Run();

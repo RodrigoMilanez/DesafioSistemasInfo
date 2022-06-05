@@ -1,0 +1,47 @@
+﻿@model DesafioSistemasInfo.Models.Usuario  
+  
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+  
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))  
+{  
+<fieldset>  
+<legend>Faça seu login</legend>  
+  
+@Html.AntiForgeryToken()  
+@Html.ValidationSummary(true)  
+@if (@ViewBag.Message != null)  
+{  
+<div style="border: 1px solid red">  
+@ViewBag.Message  
+</div>  
+}  
+<table>  
+<tr>  
+<td>@Html.LabelFor(a => a.apelido)</td>  
+<td>@Html.TextBoxFor(a => a.apelido)</td>  
+<td>@Html.ValidationMessageFor(a => a.apelido)</td>  
+</tr>  
+<tr>  
+<td>  
+@Html.LabelFor(a => a.senha)  
+</td>  
+<td>  
+@Html.PasswordFor(a => a.senha)  
+</td>  
+<td>  
+@Html.ValidationMessageFor(a => a.senha)  
+</td>  
+</tr>  
+<tr>  
+<td></td>  
+<td>  
+<input type="submit" value="Login" />  
+</td>  
+<td></td>  
+</tr>  
+</table>  
+</fieldset>  
+}  

@@ -1,83 +1,54 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using DesafioSistemasInfo.Data;
+using DesafioSistemasInfo.Models;
 
 namespace DesafioSistemasInfo.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: HomeController1
-        public ActionResult Index()
+        private readonly UsuarioContext _context;
+
+        public HomeController(UsuarioContext context)
+        {
+            _context = context;
+        }
+
+        public ActionResult Login()
         {
             return View();
         }
 
-        // GET: HomeController1/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: HomeController1/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: HomeController1/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> LoginAsync(string apelido, string senha)
         {
-            try
+            
+            if (apelido == null)
             {
-                return RedirectToAction(nameof(Index));
+                return View("Login");
             }
-            catch
+            //var usuario =  _context.Usuario.First(a => a.apelido == apelido);
+            
+            Usuario usuario =  _context.Usuario
+                .First(m => m.apelido == apelido);
+            if (usuario == null)
             {
-                return View();
+                return View("Login");
+            } else
+            {
+                if (usuario.senha == senha)
+                {
+                    return RedirectToAction("Index", "Usuarios");
+                }
+                return (View("Login"));
             }
         }
 
-        // GET: HomeController1/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: HomeController1/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: HomeController1/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: HomeController1/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

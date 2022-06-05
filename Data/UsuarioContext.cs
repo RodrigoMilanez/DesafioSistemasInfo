@@ -9,11 +9,18 @@ namespace DesafioSistemasInfo.Data
 {
     public class UsuarioContext : DbContext
     {
+        public UsuarioContext()
+        {
+
+        }
         public UsuarioContext (DbContextOptions<UsuarioContext> options)
             : base(options)
         {
         }
 
         public DbSet<DesafioSistemasInfo.Models.Usuario>? Usuario { get; set; }
+
     }
+
+    
 }
