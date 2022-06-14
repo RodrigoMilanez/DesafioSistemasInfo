@@ -8,101 +8,101 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DesafioSistemasInfo
 build_property.RootNamespace = DesafioSistemasInfo
-build_property.ProjectDir = C:\Users\usuario\source\repos\DesafioSistemasInfo\
+build_property.ProjectDir = C:\Users\usuario\Desktop\dev\DesafioSistemasInfo\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\usuario\source\repos\DesafioSistemasInfo
+build_property.MSBuildProjectDirectory = C:\Users\usuario\Desktop\dev\DesafioSistemasInfo
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Home/Error.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Home/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Home/Login.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Shared/Error.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Usuarios1/Create.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Usuarios1/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3MxXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Usuarios1/Delete.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Usuarios1/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3MxXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Usuarios1/Details.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Usuarios1/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3MxXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Usuarios1/Edit.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Usuarios1/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3MxXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Usuarios1/Index.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Usuarios1/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3MxXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Usuarios/Create.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Usuarios/Delete.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Usuarios/Details.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Usuarios/Edit.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Usuarios/Erro.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Usuarios/Erro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRXJyby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Usuarios/Index.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Valida/Create.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Valida/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsaWRhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Valida/Delete.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Valida/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsaWRhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Valida/Details.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Valida/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsaWRhXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Valida/Edit.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Valida/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsaWRhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Valida/Index.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Valida/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsaWRhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/_ViewImports.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/_ViewStart.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/usuario/source/repos/DesafioSistemasInfo/Views/Shared/_Layout.cshtml]
+[C:/Users/usuario/Desktop/dev/DesafioSistemasInfo/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1iwttpjw94
