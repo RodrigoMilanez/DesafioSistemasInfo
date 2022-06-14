@@ -5,12 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<UsuarioContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("UsuarioContext") ?? throw new InvalidOperationException("Connection string 'UsuarioContext' not found.")));
-var serviceProvider = builder.Services.BuildServiceProvider();
-try
-{
-    var dbContext = serviceProvider.GetRequiredService<UsuarioContext>();
-    dbContext.Database.Migrate();
-}
+
 catch
 {
 }
