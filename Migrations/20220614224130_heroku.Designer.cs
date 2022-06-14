@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DesafioSistemasInfo.Migrations
 {
     [DbContext(typeof(UsuarioContext))]
-    [Migration("20220602231703_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220614224130_heroku")]
+    partial class heroku
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

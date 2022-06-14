@@ -5,7 +5,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace DesafioSistemasInfo.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class heroku : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
